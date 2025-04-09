@@ -6,7 +6,6 @@ elementosDuvida.forEach(function(termos){
     })
 })
 
-// Habilita/desabilita o botão Enviar conforme o checkbox de termos
 document.getElementById('termos-condicoes').addEventListener('change', function() {
     document.getElementById('btn-enviar').disabled = !this.checked;
 });
