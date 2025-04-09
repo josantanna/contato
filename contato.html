@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ford - Contato</title>    
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/form.css" rel="stylesheet">
+    <script src="js/form.js"></script>    
+</head>
+<body>
+    <header>       
+        <div>
+            <img src="img/logo-ford-256.png" width="150" class="logo" />
+        </div>
+        <nav>
+            <ul>
+                <li>
+                    <a href="index.html" target="_blank">Home</a>
+                </li>
+                <li>
+                    <a href="lancamento.html" target="_blank">Lançamento</a>
+                </li>
+                <li>
+                    <a href="contato.html">Contato</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="forms">
+            <div>
+                <img src="img/xls 2.2 diesel.jpg">
+            </div>
+            <div>
+                <h2 class="titulo">Fale Conosco</h2>
+                <form onsubmit="Post(this); Enviar(); return false;">
+                    
+                    <input type="text" name="nome" placeholder="NOME*" class="fordform" required maxlength="50">
+                    <input type="text" name="sobrenome" placeholder="SOBRENOME*" class="fordform" required maxlength="50">
+                    <input type="text" name="cpf" placeholder="CPF*" class="fordform" required maxlength="14">
+                    <input type="email" name="email" placeholder="E-MAIL PARA CONTATO*" class="fordform" required maxlength="50">
+                    <input type="tel" name="telefone" placeholder="TELEFONE*" class="fordform" required maxlength="15">
+                    <select name="tipo-contato" class="fordform" required>
+                        <option value="" selected disabled>TIPO DE CONTATO*</option>
+                        <option value="elogio">Elogio</option>
+                        <option value="reclamacao">Reclamação</option>
+                        <option value="solicitacao">Solicitação</option>
+                    </select>
+                    <textarea name="mensagem" placeholder="MENSAGEM*" class="fordform textarea" required maxlength="500"></textarea>                              
+                    <button type="submit" class="btn-enviar" id="btn-enviar" disabled>Enviar</button>   
+      
+                                   
+                </form>                
+            </div>
+           
+            <div class="termos">
+                <h3>Termos e Serviços. Clique aqui.</h3>
+                <img src="img/arrow down.png" alt="" width="20">
+                <p class="paragrafo">Os dados serão mantidos em nossa base de dados, só enquanto for desejado por você. <span>A 
+                    qualquer momento</span> , será possível editar ou remover tais dados. Para mais informações clique <a href="https://www.ford.com.br/politica-de-privacidade/" target="_blank">aqui</a></p>
+            </div>
+                <div class="checkbox-group">
+                        <label>
+                            <input type="checkbox" id="termos-condicoes" name="termos-condicoes" required>
+                            Sim. Li e concordo com os Termos e Condições.
+                        </label>
+                        <label>
+                            <input type="checkbox" id="newsletter" name="newsletter">
+                            Sim. Também quero receber descontos e novidades.
+                        </label>
+                </div>        
+            
+        </div>
+    </main>
+    <footer>
+        <nav id="social">
+            <ul>
+                <li><span class="redesociais">Redes Sociais</span></li>
+                <li><a href="https://www.facebook.com/FordBrasil/"  title="Facebook" target="_blank"><img src="img/facebook-50.png"></a></li>
+                <li><a href="https://www.youtube.com/@ford" target="_blank" title="YouTube"><img src="img/youtube-squared-50.png"></a></li>
+                <li><a href="https://www.instagram.com/ford/" target="_blank" title="Instagram"><img src="img/instagram-logo-50.png"></a></li>
+            </ul>
+        </nav>
+        <div>
+           <img src="img/ford-96.png" width="70"  />
+        </div>
+        
+        <script src="termos.js"></script>
+    </footer>    
+</body>
+</html>
